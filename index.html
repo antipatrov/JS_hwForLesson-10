@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="container">
+            <div class="img"></div>
+            <div class="content"></div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">
+            <img class="image" src="img\Rectangle 15 copy.jpg" alt="T-SHIRT">
+        </div> -->
+    <!--<div class="content">
+            <h2 class="title">MANGO PEOPLE T-SHIRT </h2>
+            <div class="specifications">
+                <p class="product-price">Price: <span class="price">300</span>
+                    <select class="currency">
+                        <option value="s1">$</option>
+                        <option value="s3">Р</option>
+                    </select>
+
+
+
+                </p>
+                </p>
+                <p class="product-color">Color: Red </p>
+                <p class="product-size">Size:
+                    <select class="size">
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </p>
+                <p class="product-quantity">Quantity: <input class="quantity" type="number" value="2"></p>
+            </div>
+        </div>
+    </div> -->
+    <main class="main"></main>
+    <script src="data.js"></script>
+    <script>
+        const data = JSON.parse(dataProducts);
+        data.forEach(element => {
+            const mainEl = document.querySelector('.main');
+
+            const blockEls = document.createElement('div');
+            blockEls.classList.add('product-block');
+            mainEl.appendChild(blockEls);
+
+            const containerImgEl = document.createElement('div');
+            containerImgEl.classList.add('container_img');
+            blockEls.appendChild(containerImgEl);
+            const containerContentEl = document.createElement('div');
+            containerContentEl.classList.add('container_content');
+            blockEls.appendChild(containerContentEl);
+
+
+            const imgEl = document.createElement('img');
+            imgEl.classList.add('img');
+            imgEl.src = element.img;
+            containerImgEl.appendChild(imgEl);
+
+            const contentEl = document.createElement('div');
+            contentEl.classList.add('content');
+            containerContentEl.appendChild(contentEl);
+
+            const titleEl = document.createElement('h1');
+            titleEl.classList.add('title');
+            titleEl.textContent = element.title;
+            contentEl.appendChild(titleEl);
+
+            const specificationsEl = document.createElement('specifications');
+            specificationsEl.classList.add('specifications');
+            contentEl.appendChild(specificationsEl);
+
+            const priceEl = document.createElement('h3');
+            priceEl.classList.add('price');
+            priceEl.textContent = `Price ${element.price}`;
+            specificationsEl.appendChild(priceEl);
+
+            const currencyEl = document.createElement('h3');
+            currencyEl.classList.add('currency');
+            currencyEl.textContent = `Currency ${element.currency}`;
+            specificationsEl.appendChild(currencyEl);
+
+            const colorEl = document.createElement('h3');
+            colorEl.classList.add('color');
+            colorEl.textContent = `Color ${element.color}`;
+            specificationsEl.appendChild(colorEl);
+
+            const quantityEl = document.createElement('h3');
+            quantityEl.classList.add('quantity');
+            quantityEl.textContent = `Quantity ${element.quantity}`;
+            specificationsEl.appendChild(quantityEl);
+
+
+        });
+    </script>
+
+</body>
+
+</html>

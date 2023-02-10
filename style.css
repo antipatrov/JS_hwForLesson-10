@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: block;
+    justify-content: center;
+    padding: 319px;
+    /* width: 1600px;
+    height: 1748px; */
+    background: #FFFFFF;
+}
+
+.product-block {
+    display: flex;
+    height: 306px;
+    width: 652px;
+    margin-top: 40px;
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+.container_img {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 306px;
+    width: 262px;
+    left: 230px;
+    top: 319px;
+    border-radius: 0px;
+}
+
+.content {
+    width: 262px;
+    height: 222px;
+    padding: 22px 97px 62px 31px;
+}
+
+.img {
+    height: 306px;
+    width: 262px;
+    left: 230px;
+    top: 319px;
+    border-radius: 0px;
+    left: 14.38%;
+    right: 69.25%;
+    top: 18.25%;
+    bottom: 64.24%;
+    background: #F3EEEF;
+}
+
+.product-card {
+    display: flex;
+    width: 652px;
+    height: 306px;
+    width: 652px;
+    height: 306px;
+    left: 230px;
+    top: 319px;
+    border: 1px solid;
+}
+
+.title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    padding-top: 22px;
+    margin-bottom: 42px;
+}
+
+.specifications {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.price {
+    margin-top: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.product-quantity-count {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    padding-left: 40px;
+}
+
+.quantity {
+    margin-top: 6px;
+    margin-top: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.currency {
+    margin-top: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.size {
+    margin-top: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.color {
+    margin-top: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
